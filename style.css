@@ -1,0 +1,241 @@
+@import "fonts.css";
+
+body {
+  font-family: "San Francisco";
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#field td {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+}
+
+.red {
+  background: red;
+}
+
+.green {
+  background: green;
+}
+
+.blue {
+  background: blue;
+}
+
+.out {
+  width: 200px;
+  height: 30px;
+  border: 1px solid black;
+  margin-top: 5px;
+  padding: 1em 30px;
+}
+
+section .three {
+  max-height: 2000px;
+}
+
+.wrapper_screen {
+  width: 100vw;
+}
+
+.table_screen td {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(0 0 0);
+  opacity: 0.6;
+}
+
+.chess_field {
+  width: 336px;
+  height: 336px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chess_block {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+.bg_black {
+  background-color: grey;
+}
+
+.active {
+  background: url(img/horse.png);
+  background-color: orange;
+  background-size: contain;
+}
+
+.green {
+  background-color: green;
+}
+
+.minesweeper_field {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: grey;
+}
+
+.minesweeper_field div {
+  height: 40px;
+  width: 40px;
+}
+
+.bomb {
+  background-color: orange;
+}
+
+.calc_semi-result {
+  position: relative;
+  transition: 0.7s;
+  /* display: none; */
+}
+
+.num-res {
+  position: absolute;
+  width: 90px;
+  height: 50px;
+  top: 3px;
+  left: 415px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.semi-result {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  top: 0;
+  left: 410px;
+}
+
+.calc img {
+  width: 20px;
+  height: 20px;
+  margin: 10px 10px 10px 20px;
+}
+
+.wrap_title {
+  display: flex;
+}
+
+.title {
+  color: rgb(168, 168, 168);
+  font-size: 20px;
+  padding: 8px 0 0 5px;
+}
+
+.calc {
+  position: relative;
+  width: 405px;
+  height: 355px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow: hidden;
+}
+
+.calc .grid_calc {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  width: 103%;
+}
+
+#i_calc {
+  position: absolute;
+  top: 40px;
+  left: 1px;
+  width: 374px;
+  height: 60px;
+  border: none;
+  font-size: 35px;
+  background-color: rgb(49, 49, 49);
+  color: #fff;
+  text-align: right;
+  padding: 0 15px;
+  font-family: "San Francisco";
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.cell {
+  border: 0.5px solid black;
+  height: 50px;
+  width: 24%;
+  background-color: rgb(73, 72, 72);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+.orange {
+  background-color: rgb(255, 166, 0);
+}
+
+.bg_cell_grey {
+  background-color: rgba(155, 155, 155, 0.719);
+}
+
+.bg_cell_orange {
+  background-color: rgba(255, 166, 0, 0.7);
+}
+
+/* Popper */
+
+.tooltip {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50px;
+  height: 56px;
+  font-size: 30px;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  padding: 0px 10px;
+  top: 42px;
+  left: 420px;
+}
+
+.arrow {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: #333;
+  top: 65px;
+  left: 415px;
+}
+
+.hide {
+  transform: translateX(-30%);
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+
+<body>
+    <section class="one">
+        <h1>Игры</h1>
+        <h2>Игра в цвета</h2>
+        <div class="wrapper">
+            <table id="field"></table>
+        </div>
+    </section>
+    <section class="two">
+        <h2>Игра в камень / ножницы / бумага</h2>
+        <input type="text" class="game">
+        <input type="submit" id="submit" value="Go">
+        <div class="out"></div>
+    </section>
+    <section class="three">
+        <h2>Волшебный экран</h2>
+        <button class="btn_screen">START</button>
+        <div class="wrapper_screen">
+            <table class="table_screen"></table>
+        </div>
+        </table>
+    </section>
+    <section class="four">
+        <h2>Ход конем</h2>
+        <div class="chess_field"></div>
+    </section>
+    <section class="five">
+        <h2>Сапер</h2>
+        <div class="minesweeper_field"></div>
+    </section>
+    <section class="six">
+        <h2>Калькулятор</h2>
+        <div class="calc_semi-result hide">
+            <div class="tooltip">
+            </div>
+            <div class="arrow"></div>
+        </div>
+        <div class="calc">
+            <div class="wrap_title">
+                <img src="img/Calculator_(macOS).png" alt="Calculator">
+                <div class="title">Calculator</div>
+            </div>
+            <input type="text" id="i_calc" name="calc" placeholder="0" aria-describedby="tooltip">
+            <div class="grid_calc">
+                <div class="cell sign" data-del="del">AC</div>
+                <div class="cell">+/-</div>
+                <div class="cell sign" data-sign='%'>%</div>
+                <div class="cell orange sign" data-sign='/'>/</div>
+                <div class="cell" data-num='7'>7</div>
+                <div class="cell" data-num='8'>8</div>
+                <div class="cell" data-num='9'>9</div>
+                <div class="cell orange sign" data-sign='*'>x</div>
+                <div class="cell" data-num='4'>4</div>
+                <div class="cell" data-num='5'>5</div>
+                <div class="cell" data-num='6'>6</div>
+                <div class="cell orange sign" data-sign='-'>-</div>
+                <div class="cell" data-num='1'>1</div>
+                <div class="cell" data-num='2'>2</div>
+                <div class="cell" data-num='3'>3</div>
+                <div class="cell orange sign" data-sign='+'>+</div>
+                <div class="cell" data-num='0' style="width: 48.2%;">0</div>
+                <div class="cell" style="width: 24.1%;">,</div>
+                <div class="cell orange sign" data-sign='='>=</div>
+            </div>
+        </div>
+    </section>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.maskedinput.js"></script>
+    <script src="jquery.mask.min.js"></script>
+    <script src="calc.js"></script>
+    <script src="soliter.js"></script>
+    <script src="chess.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
